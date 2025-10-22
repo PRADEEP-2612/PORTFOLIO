@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Pradeep P | Java Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="contact-page-body">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <canvas id="code-bg"></canvas>
+
+    <nav id="navbar">
+        <div class="logo">&lt;PP /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home" class="nav-link clickable">Home</a></li>
+            <li><a href="index.html#about" class="nav-link clickable">About</a></li>
+            <li><a href="index.html#experience" class="nav-link clickable">Experience</a></li>
+            <li><a href="index.html#projects" class="nav-link clickable">Projects</a></li>
+            <li><a href="index.html#achievements" class="nav-link clickable">Achievements</a></li>
+            <li><a href="contact.html" class="nav-link clickable active">Contact</a></li>
+        </ul>
+        <div class="hamburger clickable">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <a href="index.html" class="back-to-home clickable" aria-label="Back to Home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+    </a>
+
+    <main class="contact-main">
+        <div class="contact-container">
+            <div class="contact-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p>Have a project in mind or just want to connect? Fill out the form below or reach out via email.</p>
+            </div>
+
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/mvgwjgda" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                 <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="interest">Area of Interest (Select multiple if needed)</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interest-backend" name="interest[]" value="Backend Development">
+                            <label for="interest-backend">Backend Development</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interest-api" name="interest[]" value="API Development">
+                            <label for="interest-api">API Development</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interest-fullstack" name="interest[]" value="Full-Stack Web App">
+                            <label for="interest-fullstack">Full-Stack Web App</label>
+                        </div>
+                         <div class="checkbox-item">
+                            <input type="checkbox" id="interest-collaboration" name="interest[]" value="Collaboration">
+                            <label for="interest-collaboration">Collaboration</label>
+                        </div>
+                         <div class="checkbox-item">
+                            <input type="checkbox" id="interest-other" name="interest[]" value="Other">
+                            <label for="interest-other">Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <div id="form-status" class="full-width"></div>
+
+                <button type="submit" class="btn btn-primary clickable full-width">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="get-in-touch-links">
+                <div class="footer-column">
+                    <h3>Follow Me</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/pradeep--paramasivam/" target="_blank" rel="noopener noreferrer" class="clickable">LinkedIn</a></li>
+                        <li><a href="https://github.com/pradeepprp" target="_blank" rel="noopener noreferrer" class="clickable">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Me</h3>
+                    <ul>
+                        <li><a href="mailto:pradeepprp11@gmail.com" class="clickable">pradeepprp11@gmail.com</a></li>
+                        <li><a href="tel:+919597631317" class="clickable">+91 95976 31317</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pradeep P. | Design by Pradeep</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="go-top-btn clickable" aria-label="Go to top">↑</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

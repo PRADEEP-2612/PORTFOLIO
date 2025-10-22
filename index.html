@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep P | Java Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <canvas id="code-bg"></canvas>
+
+    <nav id="navbar">
+        <div class="logo">&lt;PP /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link clickable">Home</a></li>
+            <li><a href="#about" class="nav-link clickable">About</a></li>
+            <li><a href="#experience" class="nav-link clickable">Experience</a></li>
+            <li><a href="#projects" class="nav-link clickable">Projects</a></li>
+            <li><a href="#achievements" class="nav-link clickable">Achievements</a></li>
+            <li><a href="contact.html" class="nav-link clickable">Contact</a></li>
+        </ul>
+        <div class="hamburger clickable">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="hero-title">Pradeep P</h1>
+                    <div class="java-badge">
+                        <span class="badge-icon">⚡</span>
+                        <span class="badge-text">Java Full Stack Developer</span>
+                    </div>
+                    <div class="typing-container">
+                        <span class="typed-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <p class="hero-subtitle">Java Developer with experience in backend development using Core Java, Spring Boot, and MySQL. Skilled in API creation, problem-solving, and writing clean, maintainable code.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary clickable">View My Work</a>
+                        <a href="#about" class="btn btn-outline clickable">About Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <div class="card-inner clickable">
+                            <img src="images/pic_11zon.jpg" alt="Pradeep P" onerror="this.onerror=null;this.src='https://placehold.co/450x550/FFF8F0/2D2A26?text=Pradeep+P';">
+                            <div class="card-glow"></div>
+                            <div class="cv-download-overlay">
+                                <a href="Pradeep_Resume.pdf" class="btn btn-primary clickable" download>Get My CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"><div class="wheel"></div></div>
+                <p>Scroll Down</p>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="about-wrapper">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p class="lead">
+                                I'm a <span class="highlight">Java Developer at Beetalogic Software Solutions</span>, passionate about building robust backend systems and APIs. My academic foundation is a <span class="highlight">Bachelor of Engineering in Electronics and Communication</span> from Government College of Engineering, Erode.
+                            </p>
+                            <div class="philosophy-section">
+                                <h3>My Approach</h3>
+                                <p>I believe in writing clean, maintainable code that solves real-world problems. My focus is on creating efficient backend systems using Java and Spring Boot, with a strong emphasis on performance, scalability, and security.</p>
+                            </div>
+                            <div class="quick-stats">
+                                <div class="stat-item"><span class="stat-number" data-target="4" data-symbol="+">0</span><span class="stat-label">Projects Completed</span></div>
+                                <div class="stat-item"><span class="stat-number" data-target="1" data-symbol="+">0</span><span class="stat-label">Years Experience</span></div>
+                                <div class="stat-item"><span class="stat-number" data-target="7" data-symbol=".8">0</span><span class="stat-label">CGPA</span></div>
+                            </div>
+                        </div>
+                        <div class="skills-showcase">
+                            <h3>Technical Skills</h3>
+                            <div class="skill-category">
+                                <h4>Programming Languages</h4>
+                                <div class="skill-bars">
+                                    <div class="skill-bar" data-skill="Java"><div class="bar-track"><div class="fill" data-level="90"></div></div></div>
+                                    <div class="skill-bar" data-skill="PHP"><div class="bar-track"><div class="fill" data-level="80"></div></div></div>
+                                    <div class="skill-bar" data-skill="JavaScript"><div class="bar-track"><div class="fill" data-level="75"></div></div></div>
+                                    <div class="skill-bar" data-skill="SQL"><div class="bar-track"><div class="fill" data-level="85"></div></div></div>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Frameworks & Technologies</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag clickable">Spring Boot</span>
+                                    <span class="skill-tag clickable">JSP & Servlet</span>
+                                    <span class="skill-tag clickable">ReactJs</span>
+                                    <span class="skill-tag clickable">Bootstrap</span>
+                                    <span class="skill-tag clickable">Hibernate</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools & Databases</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag clickable">MySQL</span>
+                                    <span class="skill-tag clickable">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="about-additional-grid">
+                        <div class="languages-section">
+                            <h3>Languages</h3>
+                            <div class="languages-grid">
+                                <div class="language-card clickable">
+                                    <div class="lang-header"><span class="lang-name">Tamil</span><span class="lang-badge">Native</span></div>
+                                    <div class="lang-bars">
+                                        <div class="lang-bar"><span class="lang-label">Read</span><div class="bar-track"><div class="fill" data-level="100"></div></div></div>
+                                        <div class="lang-bar"><span class="lang-label">Write</span><div class="bar-track"><div class="fill" data-level="100"></div></div></div>
+                                        <div class="lang-bar"><span class="lang-label">Speak</span><div class="bar-track"><div class="fill" data-level="100"></div></div></div>
+                                    </div>
+                                </div>
+                                <div class="language-card clickable">
+                                    <div class="lang-header"><span class="lang-name">English</span><span class="lang-badge">Professional</span></div>
+                                    <div class="lang-bars">
+                                        <div class="lang-bar"><span class="lang-label">Read</span><div class="bar-track"><div class="fill" data-level="90"></div></div></div>
+                                        <div class="lang-bar"><span class="lang-label">Write</span><div class="bar-track"><div class="fill" data-level="85"></div></div></div>
+                                        <div class="lang-bar"><span class="lang-label">Speak</span><div class="bar-track"><div class="fill" data-level="80"></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certifications-section">
+                            <h3>Certifications</h3>
+                            <div class="cert-grid">
+                                <div class="cert-card clickable"><h4>Java Full Stack Developer</h4><p class="cert-issuer">FITA Academy Coimbatore</p></div>
+                                <div class="cert-card clickable"><h4>Digital Marketing</h4><p class="cert-issuer">Smartbridge</p></div>
+                                <div class="cert-card clickable"><h4>Professional Readiness For Innovations</h4><p class="cert-issuer">PRIME Program</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Experience & Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker current"></div>
+                        <div class="timeline-content clickable" data-modal-key="beetalogic">
+                            <span class="timeline-date">Present</span>
+                            <h3>Java Developer</h3>
+                            <h4>Beetalogic Software Solutions</h4>
+                            <p>Currently working on Java-based projects using Core Java, Spring Boot, and MySQL. Involved in backend development and API creation for ongoing projects.</p>
+                            <div class="timeline-tags">
+                                <span class="clickable">Java</span>
+                                <span class="clickable">Spring Boot</span>
+                                <span class="clickable">MySQL</span>
+                                <span class="clickable">API Development</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content clickable" data-modal-key="rinex">
+                            <span class="timeline-date">Nov 2023 – Apr 2024</span>
+                            <h3>Java Developer Intern</h3>
+                            <h4>Rinex Techno Solutions</h4>
+                            <p>Gained hands-on experience in Core Java, OOPS concepts, and exception handling through guided training sessions and real-time tasks.</p>
+                            <div class="timeline-tags">
+                                <span class="clickable">Core Java</span>
+                                <span class="clickable">JDBC</span>
+                                <span class="clickable">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker current"></div>
+                        <div class="timeline-content clickable" data-modal-key="gce">
+                            <span class="timeline-date">2020 – 2024</span>
+                            <h3>B.E. in Electronics and Communication</h3>
+                            <h4>Government College of Engineering, Erode</h4>
+                            <p>CGPA: 7.8</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content clickable" data-modal-key="kongu">
+                            <span class="timeline-date">2018 – 2020</span>
+                            <h3>Higher Secondary (HSC)</h3>
+                            <h4>Kongu Matriculation Hr. Sec. School</h4>
+                            <p>Grade: 80%</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content clickable" data-modal-key="kongu-sslc">
+                            <span class="timeline-date">2017 – 2018</span>
+                            <h3>SSLC</h3>
+                            <h4>Kongu Matriculation School</h4>
+                            <p>Grade: 89%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card clickable" data-modal-key="travelo">
+                        <div class="project-image">
+                            <img src="images/travelo.png" alt="Travelo" onerror="this.onerror=null;this.src='https://placehold.co/400x280/FFF8F0/5382A1?text=Travelo';">
+                            <div class="project-overlay">
+                                <button class="btn-view clickable">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Spring Boot</span>
+                            <h3>Travelo</h3>
+                            <p>A comprehensive travel booking application built on SpringBoot framework with robust backend logic for searching and booking services.</p>
+                            <div class="project-tech">
+                                <span class="clickable">SpringBoot</span>
+                                <span class="clickable">MySQL</span>
+                                <span class="clickable">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card clickable" data-modal-key="car-access">
+                        <div class="project-image">
+                            <img src="images/car-access.png" alt="Car Access Hub" onerror="this.onerror=null;this.src='https://placehold.co/400x280/FFF8F0/5382A1?text=Car+Access+Hub';">
+                            <div class="project-overlay">
+                                <button class="btn-view clickable">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Platform</span>
+                            <h3>Car Access Hub</h3>
+                            <p>A web platform for managing car rentals and vehicle sharing with booking, tracking, and vehicle access management.</p>
+                            <div class="project-tech">
+                                <span class="clickable">PHP</span>
+                                <span class="clickable">MySQL</span>
+                                <span class="clickable">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card clickable" data-modal-key="ascentz">
+                        <div class="project-image">
+                            <img src="images/ascentz.png" alt="Ascentz Technologies" onerror="this.onerror=null;this.src='https://placehold.co/400x280/FFF8F0/5382A1?text=Ascentz+Website';">
+                            <div class="project-overlay">
+                                <button class="btn-view clickable">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Corporate Website</span>
+                            <h3>Ascentz Technologies Website</h3>
+                            <p>Official static website for Ascentz Technologies with responsive, mobile-first design to present company services.</p>
+                            <div class="project-tech">
+                                <span class="clickable">PHP</span>
+                                <span class="clickable">HTML/CSS</span>
+                                <span class="clickable">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card clickable" data-modal-key="boutique">
+                        <div class="project-image">
+                            <img src="images/boutique.png" alt="Boutique Shop" onerror="this.onerror=null;this.src='https://placehold.co/400x280/FFF8F0/5382A1?text=Boutique+Shop';">
+                            <div class="project-overlay">
+                                <button class="btn-view clickable">View Details</button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">E-commerce</span>
+                            <h3>Boutique Shop</h3>
+                            <p>A dynamic e-commerce site for a small boutique with product listings, shopping cart, and user account management.</p>
+                            <div class="project-tech">
+                                <span class="clickable">Java Servlet</span>
+                                <span class="clickable">MySQL</span>
+                                <span class="clickable">JSP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="recognitions">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="recognitions-grid">
+                    <div class="recognition-card">
+                        <div class="recognition-link">
+                            <a href="https://vetias.ac.in/" target="_blank" rel="noopener noreferrer" class="clickable">
+                                <img src="images/VETIAS-new-logo.png" alt="VET IAS College Logo" class="recognition-logo" onerror="this.onerror=null;this.src='https://placehold.co/100x100/FFF8F0/2D2A26?text=VET';">
+                            </a>
+                            <div class="recognition-content">
+                                <h3>VET IAS College</h3>
+                                <h4>Java Resource Person</h4>
+                                <p>Invited as a Java Resource Person to share knowledge and expertise with students, demonstrating leadership in the Java development community.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scroller-section">
+            <div class="scroller" data-speed="slow">
+                <ul class="tag-list scroller-inner">
+                    <li><a href="#projects" class="clickable">Spring Boot</a></li>
+                    <li><a href="#projects" class="clickable">Java Development</a></li>
+                    <li><a href="#projects" class="clickable">API Creation</a></li>
+                    <li><a href="#experience" class="clickable">Backend Development</a></li>
+                    <li><a href="#projects" class="clickable">MySQL</a></li>
+                    <li><a href="#projects" class="clickable">Web Applications</a></li>
+                    <li><a href="#projects" class="clickable">Problem Solving</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">Services I Offer</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card clickable">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Robust Java backend systems using Spring Boot, REST APIs, and database integration.</p>
+                    </div>
+                    <div class="service-card clickable">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3>API Development</h3>
+                        <p>Design and implementation of RESTful APIs with proper documentation and security.</p>
+                    </div>
+                    <div class="service-card clickable">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Database Design</h3>
+                        <p>Efficient database schemas, queries, and optimization for MySQL and PostgreSQL.</p>
+                    </div>
+                    <div class="service-card clickable">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Web Applications</h3>
+                        <p>Full-stack web applications with Java backend and modern frontend technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="finale" class="finale-section">
+            <div class="finale-grid">
+                <div class="orbital-container">
+                    <a href="https://www.linkedin.com/in/pradeep--paramasivam/" target="_blank" rel="noopener noreferrer" class="orbital-button-small clickable">
+                        <span>Connect</span>
+                        <svg class="orbital-text-small" viewBox="0 0 100 100">
+                            <path id="circlePathSmall" fill="none" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+                            <text>
+                                <textPath xlink:href="#circlePathSmall">
+                                    • Connect with Me • Expand Connections
+                                </textPath>
+                            </text>
+                        </svg>
+                    </a>
+                </div>
+                <div id="journey" class="journey-container">
+                    <div class="journey-content">
+                        <h2>Let's Build Something Great</h2>
+                        <p>I'm passionate about creating efficient, scalable backend solutions using Java and Spring Boot. If you're looking for a dedicated Java developer to bring your project to life, let's connect and discuss how we can work together.</p>
+                        <a href="contact.html" class="btn btn-outline magnetic-btn clickable">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-cta" class="get-in-touch">
+            <div class="container">
+                <div class="footer-cta">
+                    <a href="contact.html" class="btn btn-primary clickable">Message Me</a>
+                    <a href="Pradeep_Resume.pdf" class="btn btn-outline clickable" download>Get My CV</a>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="get-in-touch-links">
+                    <div class="footer-column">
+                        <h3>Follow Me</h3>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/pradeep--paramasivam/" target="_blank" rel="noopener noreferrer" class="clickable">LinkedIn</a></li>
+                            <li><a href="https://github.com/pradeepprp" target="_blank" rel="noopener noreferrer" class="clickable">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Me</h3>
+                        <ul>
+                            <li><a href="mailto:pradeepprp11@gmail.com" class="clickable">pradeepprp11@gmail.com</a></li>
+                            <li><a href="tel:+919597631317" class="clickable">+91 95976 3317</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Pradeep P. | Design by Pradeep</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-container" id="modal-container"></div>
+    </div>
+    
+    <a href="#home" class="go-top-btn clickable" aria-label="Go to top">↑</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
